@@ -37,7 +37,7 @@ class DashboardView extends Backbone.View
 
     Coconut.statistics = Coconut.statistics || {}
     # $('#analysis-spinner').show()
-    HTMLHelpers.ChangeTitle("Dashboard")
+    HTMLHelpers.ChangeTitle("muonekano-dashibodi")
     @$el.html "
         <style>
           .page-content {margin: 0}
@@ -67,15 +67,15 @@ class DashboardView extends Backbone.View
             #{
                 (for chipData,index in [
                   class: "alertStat"
-                  title: "Alerts"
+                  title: "alati"
                   icon: "mdi-bell-ring-outline"
                 ,
                   class: "alarmStat"
-                  title: "Alarms"
+                  title: "hatar"
                   icon: "mdi-bell-ring"
                 ,
                   class: "notFollowedUp"
-                  title: "Not Followed Up"
+                  title: "hazijafuatiliwa"
                   icon: "mdi-account-location"
                 ]
                   "
@@ -192,7 +192,7 @@ class DashboardView extends Backbone.View
 
 
     for graph in [
-      "Positive Individuals by Age"
+      "kulinganisha miaka"
       "Positive Individual Classifications"
       "Hours from Positive Test at Facility to Notification"
       "Hours From Positive Test To Complete Follow-up"

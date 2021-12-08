@@ -59,7 +59,7 @@ class MenuView extends Backbone.View
       <nav class='coconut_navigation mdl-navigation'>
         <a class='mdl-navigation__link drawer__subtitle' id='findCase' data-title='Dashboard' data-category='menuLink' href='#find/case'>
           <i class='mdl-color-magnify--blue-grey-400 mdi mdi-view-magnify mdi-24px'></i>
-          Find Case
+          Find Case-kesi zilizoonekana
         </a>
 
 
@@ -67,13 +67,13 @@ class MenuView extends Backbone.View
           <i class='mdl-color-text--blue-grey-400 mdi mdi-view-dashboard mdi-24px'></i>Dashboard</a>
         <span class='mdl-navigation__link drawer__subtitle' id='report-main' data-title='Reports' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-file-document mdi-24px'></i>
-        Reports</span>
+        Reports-ripoti</span>
         <div class='m-l-20 dropdown' id='drawer-reports'>
         #{
           reportLinks = {
-            Analysis: "Analysis"
+            Analysis: "Analysis-uchambuzi"
             Fociclassification: "Foci Classification"
-            Usersreport: "How Long Are Investigations Taking?"
+            Usersreport: "How Long Are Investigations Taking?-mudagan unafuatilia"
             Casefollowup: "Case Follow-ups Status"
             Compareweekly: "Compare Weekly Facility Reports With Case Follow-ups"
             Epidemicthreshold: "Epidemic Thresholds"
@@ -82,6 +82,7 @@ class MenuView extends Backbone.View
             #Rainfallreport: "Rainfall Submission"
             WeeklyMeetingReport: "Morning Meeting Weekly Report"
             WeeklyFacilityReports: "Weekly Facility Reports"
+            Test: "Test"
             #Weeklysummary: "Weekly Trends Compared To Previous 3 Weeks"
           }
           _(reportLinks).map (linkText, linkUrl) ->
@@ -91,7 +92,7 @@ class MenuView extends Backbone.View
         </div>
         <span class='mdl-navigation__link drawer__subtitle' id='graphs-main' data-title='Graphs' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-file-chart mdi-24px'></i>
-            Graphs
+            Graphs-mapichapicha
         </span>
         <div class='m-l-20 dropdown' id='drawer-graphs'>
           #{
@@ -102,13 +103,13 @@ class MenuView extends Backbone.View
         </div>
         <a class='mdl-navigation__link drawer__link' href='#maps' id='maps' data-title='Maps' data-category='menuLink'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-map mdi-24px'></i>
-            <span class='link-title'>Maps</span>
+            <span class='link-title'>Maps-uso wa dunia</span>
         </a>
 
 
         <span class='mdl-navigation__link drawer__subtitle' id='activity-main' data-title='Data' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-file-export mdi-24px'></i>
-            Data
+            Data-taarifa
         </span>
         <div class='m-l-20 dropdown' id='drawer-activities'>
         #{
@@ -125,7 +126,7 @@ class MenuView extends Backbone.View
 
         <span class='mdl-navigation__link drawer__subtitle' id='activity-main' data-title='Entomology' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-file-export mdi-24px'></i>
-            Entomology
+            Entomology-intomoloji
         </span>
         <div class='m-l-20 dropdown' id='drawer-activities'>
         #{
@@ -146,13 +147,13 @@ class MenuView extends Backbone.View
 
         <span class='mdl-navigation__link drawer__subtitle' id='activity-main' data-title='Activities' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-ticket mdi-24px'></i>
-            Activities
+            Activities-kazi
         </span>
         <div class='m-l-20 dropdown' id='drawer-activities'>
         #{
              activityLinks = {
-               Issues: "Issues"
-               Messaging: "Send SMS To Users"
+               Issues: "Issues-tatizo"
+               Messaging: "Send SMS To Users-sms kwa mtumiaji"
              }
              _(activityLinks).map (linkText, linkUrl) ->
                "<a class='mdl-navigation__link activity__link' id = '#{linkUrl}' href='#activities/type/#{linkUrl}' data-title='Activities'>#{linkText}</a>"
@@ -165,7 +166,7 @@ class MenuView extends Backbone.View
 <!--
         <span class='mdl-navigation__link drawer__subtitle' id='setting-main' data-title='Settings' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-settings mdi-24px'>settings</i>
-            User Settings
+            User Settings-seting
         </span>
         <div class='m-l-20 dropdown' id='drawer-settings'>
           #{
@@ -181,7 +182,7 @@ class MenuView extends Backbone.View
 -->
         <span class='mdl-navigation__link drawer__subtitle' id='admin-main' data-title='Admin' data-category='menuHeader'>
           <i class='mdl-color-text--blue-grey-400 mdi mdi-wrench mdi-24px'></i>
-           Admin
+           Admin-admini
         </span>
         <div class='m-l-20 dropdown' id='drawer-admin'>
         #{

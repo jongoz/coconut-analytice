@@ -1,4 +1,4 @@
-_ = require 'underscore'
+$ = require 'underscore'
 $ = require 'jquery'
 Backbone = require 'backbone'
 Backbone.$  = $

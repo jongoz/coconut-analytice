@@ -26,7 +26,7 @@ class EditDataView extends Backbone.View
     "change #month": "updateMonth"
 
   updateMonth: ->
-    $("#data").html @document[$('#month').val()]?.join("\n")
+    $("#data-taarifa").html @document[$('#month-mwaka').val()]?.join("\n")
 
   save: ->
     $("#message").html ""

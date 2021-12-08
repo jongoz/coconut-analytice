@@ -37,7 +37,7 @@ class IndividualsView extends Backbone.View
 
     @$el.html "
       <div style='margin-bottom:10px'>
-        Each row represents an individual that test positive at a facility or someone that tests positive or negative during investigation/followup activities at households.
+        hey this is key word to impress the world
       </div>
       <div id='dateSelector' style='display:inline-block'></div>
       <div id='dateDescription' style='display:inline-block;vertical-align:top;margin-top:10px'></div>
